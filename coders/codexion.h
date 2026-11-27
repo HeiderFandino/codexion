@@ -6,7 +6,7 @@
 /*   By: hfandino <hfandino@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/25 16:52:41 by hfandino          #+#    #+#             */
-/*   Updated: 2026/11/25 23:13:48 by hfandino         ###   ########.fr       */
+/*   Updated: 2026/11/27 18:08:08 by hfandino         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,4 +54,8 @@ typedef struct s_simulation
 	int				finish;
 }	t_simulation;
 
+int		arguments_valid(char **argv);
+int		scheduler_valid(char **argv, t_scheduler *scheduler);
+void	init_config(char **argv, t_simulation *sim);
+int		init_resources(t_simulation *sim);
 #endif
